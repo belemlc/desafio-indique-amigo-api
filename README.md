@@ -10,7 +10,7 @@ Luiz Carlos Belem `<belemlc@gmail.com>`
         1) Fazer um clone da imagem: git clone https://github.com/belemlc/desafio-indique-amigo-api.git
         2) Acessar a raiz do projeto clonado
         3) Instalar bibliotecas: composer install
-        3) executar o docker fazendo build da image: docker-compose up -d --build
+        4) executar o docker fazendo build da image: docker-compose up -d --build
         4) Api sendo executada em: http://localhost:8080
         5) Dados do postgres no docker-compose.yml
 
