@@ -6,7 +6,6 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: app-desafio-indique-amigo
-    entrypoint: docker/entrypoint.sh
     tty: true
     volumes:
       - .:/var/www/html
