@@ -35,7 +35,7 @@ class IndicacaoEditHandler extends HandlerAbstract implements RequestHandlerInte
         } catch (\Exception $e) {
             $response = $this->errorResponse(
                 $e,
-                'Error on edit Indicacao.',
+                'Não foi possível editar a indicação.',
                 400
             );
         }

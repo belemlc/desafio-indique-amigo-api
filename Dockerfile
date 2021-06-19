@@ -8,7 +8,7 @@ RUN apt-get update \
 
 COPY ./docker/php/php.ini /usr/local/etc/php/conf.d/php.override.ini
 
-RUN docker-php-ext-install pdo pdo_mysql opcache
+RUN docker-php-ext-install pdo pdo_pgsql opcache
 
 # Install Composer
 COPY --from=composer /usr/bin/composer /usr/bin/composer

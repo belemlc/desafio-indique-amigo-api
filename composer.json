@@ -52,6 +52,7 @@
         "laminas/laminas-zendframework-bridge": "^1.0",
         "mezzio/mezzio": "^3.0.1",
         "mezzio/mezzio-aurarouter": "^3.0",
+        "mezzio/mezzio-cors": "^1.0",
         "mezzio/mezzio-helpers": "^5.0",
         "mezzio/mezzio-laminasviewrenderer": "^2.0"
     },

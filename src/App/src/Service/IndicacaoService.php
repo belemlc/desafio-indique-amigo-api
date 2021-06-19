@@ -50,7 +50,7 @@ class IndicacaoService extends ServiceAbstract
             $entity = $this->em->find($this->entity, $data['id']);
 
             if ( ! $entity) {
-                throw new Exception('Indicação not exists.');
+                throw new Exception('Indicação não existe.');
             }
 
             $cpf = $data['cpf'] ?? null;
@@ -82,7 +82,7 @@ class IndicacaoService extends ServiceAbstract
             $cpfValidator = new CPFValidator();
 
             if (!$cpfValidator->isValid($cpf)) {
-                throw new \Exception('CPF is invalid.');
+                throw new \Exception('CPF inválido.');
             }
 
             $dql = "SELECT COUNT(1) total FROM App\Entity\Indicacao i WHERE i.cpf = '{$cpf}'";
@@ -91,7 +91,7 @@ class IndicacaoService extends ServiceAbstract
             $cpfExist = $result[0]['total'] > 0 ? true : false;
 
             if ($cpfExist) {
-                throw new \Exception('CPF already registered.');
+                throw new \Exception('CPF já cadastrado.');
             }
         } catch (\Exception $e) {
             throw $e;
@@ -110,7 +110,7 @@ class IndicacaoService extends ServiceAbstract
             $emailValidator = new EmailAddress();
 
             if ( ! empty($email) && ! $emailValidator->isValid($email) ) {
-                throw new \Exception('Email is invalid.');
+                throw new \Exception('Email inválido.');
             }
             
         } catch (\Exception $e) {

@@ -30,7 +30,7 @@ class IndicacaoListHandler extends HandlerAbstract implements RequestHandlerInte
         } catch (\Exception $e) {
             $response = $this->errorResponse(
                 $e,
-                'Error on list Indicacao.',
+                'Não foi possível listar as indicações.',
                 400
             );
         }

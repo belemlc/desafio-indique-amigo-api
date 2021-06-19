@@ -32,7 +32,7 @@ class IndicacaoCreateHandler extends HandlerAbstract implements RequestHandlerIn
         } catch (\Exception $e) {
             $response = $this->errorResponse(
                 $e,
-                'Error on create indicacao.',
+                'Não foi possível criar uma indicação.',
                 400
             );
         }

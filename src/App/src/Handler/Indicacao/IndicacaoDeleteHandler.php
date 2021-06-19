@@ -30,12 +30,12 @@ class IndicacaoDeleteHandler extends HandlerAbstract implements RequestHandlerIn
             $service->delete($id);
 
             $response = $this->successResponse([
-                'message' => 'Indicacao successfully deleted.'
+                'message' => 'Indicacao excluída com sucesso.'
             ]);
         } catch (\Exception $e) {
             $response = $this->errorResponse(
                 $e,
-                'Error on delete Indicacao.',
+                'Não foi possível excluir a indicação.',
                 400
             );
         }

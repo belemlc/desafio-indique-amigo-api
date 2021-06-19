@@ -17,12 +17,12 @@ class StatusListHandler extends HandlerAbstract implements RequestHandlerInterfa
     {
         try {
             $service = $this->container->get(StatusService::class);
-            $resultWithDQL = $service->getAll();
-            $response = $this->successResponse(['data' => $resultWithDQL]);
+            $result = $service->getAll();
+            $response = $this->successResponse($result);
         } catch (\Throwable $e) {
             $response = $this->errorResponse(
                 $e,
-                'Error trying to list the Indicação.',
+                'Não foi possível listar o status.',
                 400
             );
         }
