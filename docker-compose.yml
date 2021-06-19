@@ -9,6 +9,7 @@ services:
     tty: true
     volumes:
       - .:/var/www/html
+      - ./docker/entrypoint.sh:/docker-entrypoint-initdb.d/entrypoint.sh
     ports:
       - "9000"
     networks:
