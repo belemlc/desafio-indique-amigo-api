@@ -17,6 +17,14 @@ Luiz Carlos Belem `<belemlc@gmail.com>`
 
 # Se precisar...
 
+### Instalação do composer
+
+https://getcomposer.org/
+
+### Documentação do Mezzio
+
+https://docs.mezzio.dev/mezzio/
+
 ### Habilitar modo development do Mezzio para ajudar debugar 
 Para habilitar 
 ```composer development-enable```
@@ -26,3 +34,6 @@ Para desabilitar
 
 ### As entidades já foram mapeadas, caso adicione novas será preciso rodar o comando abaixo
 ``` docker exec -it app-desafio-indique-amigo vendor/doctrine/orm/bin/doctrine orm:convert-mapping --from-database annotation src/App/src/Entity```
+
+
+``` * Favor qualquer dúvida pode me acionar por email ou telefone ```
